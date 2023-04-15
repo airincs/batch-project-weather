@@ -5,7 +5,7 @@
 
 ### Technologies and Services Used
 - Python
-- Various AWS Services: EC2, Lambda, S3, Glue, Glue Catalog, Redshift, Cloudwatch, EventBridge
+- Various AWS Services: EC2, QuickSight, Lambda, S3, Glue, Glue Catalog, Redshift, Cloudwatch, EventBridge
 - Linux + Bash Commands
 - API: Open Meteo - https://open-meteo.com/
 
@@ -37,3 +37,6 @@ Once we have the data in the S3 Bucket, we move on to using Glue. We create craw
 Once we have the Glue Catalogs / Tables complete, we then use Glue once again to move the data to Redshift. We create an automatic Glue Job that moves the cataloged Glue data to Redshift.
 
 ![alt text](https://github.com/airincs/batch-project-weather/blob/main/images/redshift%20weather.PNG)
+
+### QuickSight
+A report was created from the Redshift data warehouse.
